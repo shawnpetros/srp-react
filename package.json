@@ -6,12 +6,18 @@
   "scripts": {
     "build": "webpack --mode production",
     "test": "jest",
-    "pretest": "git add -A && git commit -av",
+    "posttest": "git add -A && git commit -av",
     "preversion": "yarn test && yarn build",
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version\""
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnpetros/srp-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shawn Petros",
   "license": "ISC",
   "dependencies": {
     "jest": "^24.9.0"
