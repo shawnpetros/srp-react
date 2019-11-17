@@ -2,7 +2,7 @@ import { render, createElement, textElement } from "../../lib";
 
 describe("render", () => {
   it("should take in a createElement result and append it to the container", () => {
-    const shreactElement = createElement(
+    const srpReactElement = createElement(
       "h1",
       { title: "foo" },
       textElement("bar")
@@ -13,7 +13,7 @@ describe("render", () => {
     h1.appendChild(document.createTextNode("bar"));
     const actualDom = document.createElement("div");
     expectedDom.appendChild(h1);
-    render(shreactElement, actualDom);
+    render(srpReactElement, actualDom);
 
     expect(actualDom).toEqual(expectedDom);
   });

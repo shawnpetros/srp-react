@@ -4,8 +4,8 @@ module.exports = {
   entry: "./lib/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "spreact.js",
-    library: "spreact",
+    filename: "srp-react.js",
+    library: "srp-react",
     libraryTarget: "umd"
   }
 };
