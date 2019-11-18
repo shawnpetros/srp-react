@@ -1,12 +1,11 @@
 {
   "name": "srp-react",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "",
   "module": "./src/index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "test": "jest",
-    "posttest": "git add -A && git commit -av",
+    "build": "rollup -c",
+    "test": "jest --coverage",
     "preversion": "yarn test && yarn build",
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version\""
   },
@@ -19,17 +18,19 @@
   ],
   "author": "Shawn Petros",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^24.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-jest": "^24.9.0",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "buble": "^0.19.8",
+    "jest": "^24.9.0",
+    "rollup": "^1.27.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
     "yarn": "^1.19.1"
   }
 }
