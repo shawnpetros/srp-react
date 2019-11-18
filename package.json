@@ -1,13 +1,15 @@
 {
   "name": "@shawnpetros/react",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "test": "jest --coverage",
-    "bump": "yarn version --patch",
+    "patch": "yarn version --patch",
+    "major": "yarn version --major",
+    "minor": "yarn version --minor",
     "preversion": "yarn test && yarn build",
     "postversion": "git push --tags && yarn publish . --new-version $npm_package_version --access public --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version\""
   },
