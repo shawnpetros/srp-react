@@ -11,8 +11,8 @@ describe("render", () => {
     const h1 = document.createElement("h1");
     h1.title = "foo";
     h1.appendChild(document.createTextNode("bar"));
-    const actualDom = document.createElement("div");
     expectedDom.appendChild(h1);
+    const actualDom = document.createElement("div");
     render(srpReactElement, actualDom);
 
     expect(actualDom).toEqual(expectedDom);
