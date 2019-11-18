@@ -1,9 +1,14 @@
-import buble from "rollup-plugin-buble";
+import resolve from "rollup-plugin-node-resolve";
+import commonjs from "rollup-plugin-commonjs";
+import { terser } from "rollup-plugin-terser";
 
 export default {
-  entry: "./lib/index.js",
-  moduleName: "srp-react",
-  plugins: [buble],
-  format: process.env.format,
-  dest: `dist/index.${process.env.format}.js`
+  input: "./lib/main.js",
+  output: {
+    file: "dist/index.js",
+    format: "umd",
+    name: "React",
+    plugins: [terser()]
+  },
+  plugins: [resolve(), commonjs()]
 };
