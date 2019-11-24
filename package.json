@@ -1,6 +1,6 @@
 {
   "name": "@shawnpetros/react",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -11,7 +11,7 @@
     "major": "yarn version --major",
     "minor": "yarn version --minor",
     "preversion": "yarn test && yarn build",
-    "postversion": "git push --tags && yarn publish . --new-version $npm_package_version --access public --tag $npm_package_version --tag latest && git push && echo \"Successfully released version $npm_package_version\""
+    "postversion": "git push --tags && yarn publish . --new-version $npm_package_version --access public --tag latest && git push && echo \"Successfully released version $npm_package_version\""
   },
   "repository": {
     "type": "git",
