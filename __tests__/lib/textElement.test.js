@@ -1,17 +1,17 @@
-import { TEXT_ELEMENT } from "../../constants";
-import { textElement } from "../../lib";
+import { TEXT_ELEMENT } from '../../constants'
+import { textElement } from '../../lib'
 
-describe("textElement", () => {
-  it("should take in text and return a node object", () => {
+describe('textElement', () => {
+  it('should take in text and return a node object', () => {
     const expected = {
       type: TEXT_ELEMENT,
       props: {
-        nodeValue: "foo",
+        nodeValue: 'foo',
         children: []
       }
-    };
-    const actual = textElement("foo");
+    }
+    const actual = textElement('foo')
 
-    expect(actual).toEqual(expected);
-  });
-});
+    expect(actual).toEqual(expected)
+  })
+})
