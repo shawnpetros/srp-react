@@ -1,5 +1,5 @@
 import { TEXT_ELEMENT } from '../../constants'
-import { createElement } from '../../lib'
+import createElement from '../../lib/createElement'
 
 describe('createElement', () => {
   it('should take in types, props, and children and return an object', () => {

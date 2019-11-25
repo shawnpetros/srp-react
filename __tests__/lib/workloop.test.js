@@ -1,4 +1,4 @@
-import { workloop } from '../../lib'
+import { workloop } from '../../lib/render'
 import performUnitOfWork from '../../lib/performUnitOfWork'
 import expectExport from 'expect'
 

@@ -1,4 +1,7 @@
-import { render, createElement, textElement, workloop } from '../../lib'
+import render from '../../lib/render'
+import createElement from '../../lib/createElement'
+import textElement from '../../lib/textElement'
+import { workloop } from '../../lib/render'
 
 describe('render', () => {
   it('should take in a createElement result and append it to the container', () => {

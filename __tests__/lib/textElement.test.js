@@ -1,5 +1,5 @@
 import { TEXT_ELEMENT } from '../../constants'
-import { textElement } from '../../lib'
+import textElement from '../../lib/textElement'
 
 describe('textElement', () => {
   it('should take in text and return a node object', () => {

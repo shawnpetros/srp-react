@@ -1,4 +1,6 @@
-import { createDom, createElement, textElement } from '../../lib'
+import textElement from '../../lib/textElement'
+import createDom from '../../lib/createDom'
+import createElement from '../../lib/createElement'
 // jest.mock('../../lib/updateDom', () => {
 //   return jest.fn()
 // })
