@@ -1,14 +1,14 @@
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
-import { terser } from "rollup-plugin-terser";
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import { terser } from 'rollup-plugin-terser'
 
 export default {
-  input: "./lib/main.js",
+  input: './lib/main.js',
   output: {
-    file: "dist/index.js",
-    format: "umd",
-    name: "React",
-    plugins: [terser()]
+    file: 'dist/index.js',
+    format: 'cjs',
+    name: 'React'
+    // plugins: [terser()]
   },
   plugins: [resolve(), commonjs()]
-};
+}
